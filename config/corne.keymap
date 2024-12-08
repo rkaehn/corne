@@ -28,15 +28,6 @@
             tapping-term-ms = <1000>;
             flavor = "balanced";
         };
-
-        underscore_key: underscore_key {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CUSTOM_UNDERSCORE";
-            #binding-cells = <0>;
-            bindings = <&kp UNDERSCORE>, <&kp UNDERSCORE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     keymap {
@@ -80,10 +71,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &kp DOLLAR       &kp PERCENT    &kp CARET  &trans    &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &trans
-&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &trans    &kp MINUS        &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &trans
-&trans  &trans  &kp PIPE         &kp BACKSLASH  &kp TILDE  &trans    &underscore_key  &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE   &trans
-                                 &trans         &trans     &trans    &trans           &trans        &trans
+&trans  &trans  &kp DOLLAR       &kp PERCENT    &kp CARET  &trans    &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &trans
+&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &trans    &kp MINUS       &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &trans
+&trans  &trans  &kp PIPE         &kp BACKSLASH  &kp TILDE  &trans    &kp UNDERSCORE  &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE   &trans
+                                 &trans         &trans     &trans    &trans          &trans        &trans
             >;
         };
 
