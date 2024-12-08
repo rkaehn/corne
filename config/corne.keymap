@@ -23,10 +23,16 @@
             compatible = "zmk,behavior-hold-tap";
             label = "CUSTOM_SK";
             bindings = <&kp>, <&sk>;
-
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             flavor = "balanced";
+        };
+        underscore_key: underscore_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CUSTOM_UNDERSCORE";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&kp UNDERSCORE>;
+            mods = <(MOD_NONE)>;
         };
     };
 
