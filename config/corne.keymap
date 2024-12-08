@@ -35,7 +35,7 @@
             #binding-cells = <0>;
             bindings = <&kp UNDERSCORE>, <&kp UNDERSCORE>;
 
-            mods = <(MOD_NONE|MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
